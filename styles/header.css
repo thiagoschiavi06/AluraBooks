@@ -1,10 +1,10 @@
 .cabeçalho__menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-image: url("..//img/Menu.svg");
+    display: inline-block;
+    background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
-    display: inline-block;
 }
 
 .cabeçalho {
@@ -29,16 +29,16 @@
     position: absolute;
     top: 100%;
     width: 60vw;
-    border-radius: 0 0 20px 20px;
-    background-color: var(--branco);
 }
 
-.container__botao:checked~.lista-menu {
+.container__botao:checked ~ .lista-menu {
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item {
-padding: 1em;
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
 }
 
 .lista-menu__titulo {
@@ -49,7 +49,7 @@ padding: 1em;
 .lista-menu__link {
     background: var(--azul-degrade);
     -webkit-background-clip: text;
-    -webkit-text-size-adjust: transparent;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
 }
